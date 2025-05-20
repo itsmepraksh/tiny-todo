@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>to do list</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .item{
+            width: 15rem; 
+            display: flex; 
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+        } 
+        .item label{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 500;
+            font-size: 1.25rem;
+            
+        }
+
+        label input{
+            padding-right: 1rem;
+        }
+
+         
+
+        #deleteBtn:active{
+            scale: 0.9;
+        }
+    </style>
+</head>
+<body class="h-screen w-screen">
+
+    <main class="bg-[#1E263B] h-full w-full text-white relative">
+
+        <div class="container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#343C4F] w-auto rounded-xl py-[1rem]">
+            <div class="part1 text-center p-[1rem] text-xl">
+                Saturday, 17 May 2025
+            </div>
+            <div class="part2 flex flex-col items-center justify-center p-[1rem]">
+                <h1 class="text-3xl font-bold">To do List</h1>
+                <div class="list p-[1rem]">
+                    <!-- <div class="item w-[15rem] flex gap-[1rem] items-center justify-between  text-green-500  p-[1rem]" >
+                        <p><input type="checkbox"> complete task</p>
+                        <i class="fa-regular fa-trash-can delBtn"></i>
+                    </div> -->
+                </div>
+
+                <form  class="flex gap-[1rem]">
+                    <input type="text" placeholder="add task" class="bg-[#0C101A] px-[1rem] py-[0.5rem] rounded-xl outline-none ">
+                    
+                    <button class="add"><i class="fa-solid fa-circle-plus"></i></button>
+                </form>
+
+            </div>
+            <div class="part3"></div>
+        </div>
+    </main>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
