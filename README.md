@@ -9,8 +9,7 @@ A lightweight, minimalistic To-Do application built with **Vanilla JavaScript**,
 
 * ✅ **Add Task** – Enter a new task and add it to your list.
 * 📋 **View Tasks** – Display all existing tasks.
-* ❌ **Delete Task** – Remove individual tasks from the list.
-* 💾 **LocalStorage** – Tasks persist even after page reload.
+* ❌ **Delete Task** – Remove individual tasks from the list. 
 
 > ⚠️ This version intentionally excludes "Update/Edit" functionality to keep it focused and simple.
 
